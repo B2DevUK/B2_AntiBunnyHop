@@ -6,6 +6,6 @@ description 'A simple Anti-Bunny Hop Script'
 version '1.0.0'
 
 client_scripts {
-    'config.lua',
-    'client.lua'
+    'shared/config.lua',
+    'client/client.lua'
 }
