@@ -12,6 +12,7 @@ Citizen.CreateThread(function()
                     SetPedToRagdoll(playerPed, 500, 500, 0, false, false, false)
                 else
                     lastJumpTime = currentTime
+                    exports['b2_notify']:notify('error', 'You cannot bunnyhop!', Config.NotifyPosition);
                 end
             end
         end
@@ -22,6 +23,9 @@ Citizen.CreateThread(function()
                 local speed = GetEntitySpeed(playerPed)
                 if speed > Config.RunSpeedThreshold then
                     SetPedToRagdoll(playerPed, 500, 500, 0, false, false, false)
+                    if Config.NotifyEnabled then
+                        exports['b2_notify']:notify('error', 'You cannot run and jump!', Config.NotifyPosition);
+                    end
                 end
             end
         end
