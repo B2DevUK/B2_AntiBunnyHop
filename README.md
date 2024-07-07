@@ -19,9 +19,9 @@ This script prevents players from bunny hopping or running while jumping in a Fi
 3. **Add the script to your server configuration**:
    - Open your `server.cfg` file and add the following line:
      ```
-     ensure your_folder_name
+     ensure b2_antiBunnyHop
      ```
-     Replace `your_folder_name` with the name of the folder you placed in the `resources` directory.
+     Replace `b2_antiBunnyHop` with the name of the folder you placed in the `resources` directory.
 
 4. **Start your server**:
    - Restart your FiveM server or start it if it was not running.
